@@ -1,0 +1,173 @@
+/**index.wxss**/
+@import './iconfont.wxss';
+page {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+text{
+  font-size: 26rpx;
+  line-height: 30rpx;
+} 
+
+.block{
+  margin-bottom: 15rpx;
+  background: #ffffff;
+  width: 100%;
+}
+
+.container .header{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 25rpx;
+}
+
+.header .head {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 160rpx;
+  padding-top: 50rpx;
+  padding-left: 20rpx;
+}
+
+.name{
+  width: 200rpx;
+  line-height: 42rpx;
+  font-size: 42rpx;
+  font-weight: 520;
+}
+
+.intro{
+  margin-top: 15rpx;
+  color: #666;
+}
+
+.header .img{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  position: absolute;
+  right: 15rpx;
+  top: 35rpx;
+}
+
+.header .contact{
+  padding-left: 20rpx;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+.contact text{
+  font-size: 28rpx;
+  margin-top: 15rpx;
+}
+
+.interval {
+ padding: 25rpx;
+}
+
+.interval .title{
+  padding-top: 20rpx;
+  padding-bottom: 35rpx;
+  font-size: 36rpx;
+}
+
+.content {
+  font-size: 28rpx;
+  color: #999;
+  line-height: 42rpx;
+}
+
+.content .branch {
+  border-bottom: 1rpx #ccc solid;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40rpx;
+  padding-top: 20rpx;
+}
+
+.branch .post-name{
+  font-weight: 520;
+  font-size: 36rpx;
+  color: #000;
+}
+
+.branch text{
+  font-size: 28rpx;
+  line-height: 42rpx;
+  padding: 12rpx 0rpx;
+}
+
+.worker-title {
+  color: #333;
+  padding: 25rpx 0rpx;
+}
+
+.branch .project-name{
+  color: #20B2AA;
+  font-size: 32rpx;
+}
+
+.edc_image image{
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.edc {
+  display: flex;
+  flex-direction: row;
+}
+
+.edc .edc_info{
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx;
+}
+
+.edc_info .edc-title {
+  color: #222;
+  font-size: 34rpx;
+}
+
+.edc_info text {
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+.progress{
+  border-radius: 10rpx;
+}
+.skill {
+  padding: 30rpx 0rpx;
+}
+.skill .skill_title {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20rpx;
+}
+.skill_title .skill_name {
+  color: #20B2AA;
+}
+.skill_title .degree_name {
+  position: absolute;
+  right: 30rpx;
+}
+.skill .skill_info {
+  border-radius: 50rpx;
+}

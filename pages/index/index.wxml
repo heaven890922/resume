@@ -1,0 +1,85 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='header block'>
+      <view class='head'>
+        <view class='info'>
+          <text class='name'>{{userData.info.name}}</text> 
+          <text class='intro' >{{userData.info.intro}}</text> 
+        </view>
+        <image class='img' src='//www.lgstatic.com/i/image3/M00/21/5D/Cgq2xlqTwBmAS3-wAAJEc1Ty7dk262.jpg'></image>
+      </view>
+      <view class='contact'>
+        <text class='iconfont icon-shouji' bindtap="makePhone">     {{userData.info.mobile}}</text>
+        <text class='iconfont icon-youxiang'>     {{userData.info.email}}</text>
+      </view>
+    </view>
+
+    <view class='describe block'>
+      <view class='interval'>
+        <view class='title'>自我描述</view>
+        <view class='content'>{{userData.decribe}}</view></view>
+    </view>
+
+    <view class='describe block'>
+      <view class='interval'>
+        <view class='title'>工作经历</view>
+          <view class='content'>
+            <view class='branch' wx:for="{{userData.worker}}">
+              <text class='post-name'>{{item.post_name}}</text>
+              <text class='com-name'>{{item.com_name}}</text>
+              <text class='worker-time'>{{item.worker_time}}</text>
+              <text class='worker-title'>工作内容</text>
+              <text class='worker-info'>{{item.worker_info}}</text>
+            </view>
+          </view>
+        </view>
+    </view>
+
+    <view class='describe block'>
+      <view class='interval'>
+        <view class='title'>教育经历</view>
+          <view class='content'>
+            <view class='branch' wx:for="{{userData.study}}">
+              <view class='edc'>
+                <view class='edc_image'><image class='university' src='{{item.img}}'></image></view>
+                <view class='edc_info'>
+                  <text class='edc-title'>{{item.university}}</text>
+                  <text class='edc-info'>{{item.degree}} · {{item.major}}</text>
+                  <text class='edc-info'>{{item.study_time}}</text>
+              </view>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+
+    <view class='describe block'>
+      <view class='interval'>
+        <view class='title'>项目经验</view>
+          <view class='content'>
+            <view class='branch' wx:for="{{userData.project}}">
+              <text class='project-name'>{{item.project_name}}</text>
+              <text class='com-name'>{{item.post_name}}</text>
+              <text class='worker-time'>{{item.worker_time}}</text>
+              <text class='worker-title'>项目内容</text>
+              <text class='worker-info'>{{item.worker_info}}</text>
+            </view>
+          </view>
+        </view>
+    </view>
+
+    <view class='describe block'>
+      <view class='interval'>
+        <view class='title'>技能评价</view>
+          <view class='content'>
+            <view class='skill' wx:for="{{userData.skills}}">
+              <view class='skill_title'>
+                <text class='skill_name'>{{item.skill_name}}</text>
+                <text class='degree_name'>{{item.degree_name}}</text>
+              </view>
+              <view class='skill_info'><progress class='progress' percent="{{item.degree}}" /></view>
+            </view>
+          </view>
+        </view>
+    </view>
+</view>
